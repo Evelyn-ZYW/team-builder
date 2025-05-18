@@ -23,7 +23,7 @@ const DarkModeProvider = ({ children }) => {
   );
 };
 
-// Consume the context
+// Create a custom hook that encapsulate the consumption and error handling of the context
 const useDarkMode = () => {
   const context = React.useContext(DarkModeContext);
   if (!context) {
@@ -41,6 +41,7 @@ const Solution = ({ users }) => {
   const [homeTeam, setHomeTeam] = React.useState(home);
   const [awayTeam, setAwayTeam] = React.useState(away);
 
+  // Consume the context
   const { darkMode, toggleDarkMode } = useDarkMode();
 
   // create function to move team member
