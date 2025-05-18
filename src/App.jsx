@@ -4,8 +4,10 @@
  */
 import React from "react";
 
+// Create the dark mode context
 const DarkModeContext = React.createContext();
 
+// Provide the context
 const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = React.useState(false);
 
@@ -20,6 +22,7 @@ const DarkModeProvider = ({ children }) => {
   );
 };
 
+// Consume the context
 const useDarkMode = () => {
   const context = React.useContext(DarkModeContext);
   if (!context) {
