@@ -82,7 +82,7 @@ const Solution = ({ users }) => {
       <button onClick={toggleDarkMode} className="theme-switch">
         {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
       </button>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="teams-container">
         <Team title="Home Team">
           <TeamMembers
             members={homeTeam}
@@ -136,7 +136,7 @@ const TeamMembers = ({
         </div>
       ))}
       {isTeamMismatch(members) && (
-        <div className="mismatch-validation">{isTeamMismatch(members)}</div>
+        <p className="mismatch-validation">{isTeamMismatch(members)}</p>
       )}
     </div>
   );

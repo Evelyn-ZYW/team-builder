@@ -1,3 +1,9 @@
+div.teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
 /* styles for TeamMembers component */
 
 div.team-members-container {
@@ -15,6 +21,8 @@ div.member-row {
   padding: 1rem;
   margin: 0 1rem;
   border-radius: 10px;
+  min-width: 35rem;
+  max-width: 100%;
 }
 
 div.initial-circle {
@@ -31,8 +39,8 @@ div.initial-circle {
 
 div.team-members-container button {
   font-weight: 600;
-  color: #1F4E79;
-  border: 2px solid #1F4E79;
+  color: #1f4e79;
+  border: 2px solid #1f4e79;
   border-radius: 5px;
   background-clip: padding-box;
   padding: 0.2rem 0.5rem;
@@ -40,15 +48,15 @@ div.team-members-container button {
   margin-right: 1rem;
 }
 
-div.mismatch-validation {
+p.mismatch-validation {
   padding: 0 1.5rem;
   color: red;
+  max-width: 35rem;
 }
 
 /* styles for dark mode */
 .dark,
-.dark h1
-{
+.dark h1 {
   color: white;
   background-color: #292929;
 }
@@ -62,12 +70,12 @@ div.mismatch-validation {
 }
 
 .dark .theme-switch {
-  background-color: #3C4042;
+  background-color: #3c4042;
   color: white;
 }
 
 .dark .panel {
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 .dark .team-container {
@@ -75,7 +83,7 @@ div.mismatch-validation {
 }
 
 .dark .member-row {
-  background-color: #1E1E1E; 
+  background-color: #1e1e1e;
 }
 
 .dark .initial-circle {
@@ -83,7 +91,6 @@ div.mismatch-validation {
 }
 
 .dark .team-members-container button {
-  border: 2px solid #C490FF;
-  color: #C490FF;
+  border: 2px solid #c490ff;
+  color: #c490ff;
 }
-
